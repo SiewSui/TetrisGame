@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="600.0" stylesheets="@TetrisLayout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ss.tetris.game.view.LeaderboardController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="600.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/LeaderboardPic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="155.0" layoutY="101.0" styleClass="leaderboard-label" stylesheets="@TetrisLayout.css" text="LeaderBoard" textFill="WHITE">
+         <font>
+            <Font name="Elephant" size="33.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="100.0" layoutY="185.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <TableView fx:id="userTable" layoutX="-38.0" prefHeight="300.0" prefWidth="509.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-38.0" AnchorPane.rightAnchor="-38.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="rankingColumn" minWidth="-1.0" prefWidth="40.33331298828125" text="No" />
+                <TableColumn fx:id="usernameColumn" minWidth="-1.0" prefWidth="122.66668701171875" text="Username" />
+                  <TableColumn fx:id="scoreColumn" minWidth="-1.0" prefWidth="108.33331298828125" text="Score" />
+                  <TableColumn fx:id="dateColumn" minWidth="-1.0" prefWidth="181.0" text="Date" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="24.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleBacktoDashboard" prefHeight="28.0" prefWidth="35.0" styleClass="back-button" text="&lt;" />
+      <Text fill="WHITE" layoutX="59.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only the top 10 highest scores will be listed on the leaderboard. Keep trying and challenge yourself to beat the highest scores! Your perseverance will help you climb to the top. Good luck!" textAlignment="CENTER" wrappingWidth="482.96551513671875">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

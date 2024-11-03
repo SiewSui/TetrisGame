@@ -1,0 +1,284 @@
+/* styles.css */
+
+/* Apply styles to the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #E6E6FA;
+}
+
+/* Style the Label */
+.welcome-label {
+    -fx-text-fill: #2e1b5b;
+    -fx-font-family: 'Gill Sans Ultra Bold Condensed';
+    -fx-font-size: 39px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* Style the TextField */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #2e1b5b;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+/* Style the Username Label */
+.username-label {
+    -fx-text-fill: #2e1b5b;
+    -fx-font-size: 16px;
+}
+
+/* Style the Button */
+.button {
+    -fx-background-color: #2e1b5b;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 1);
+}
+
+/* Style for Button on hover */
+.button:hover {
+    -fx-background-color: #1b0c3a;
+    -fx-border-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 1);
+}
+
+
+/* Style for Button on hover */
+.back-button:hover {
+    -fx-background-color: #8ba4d5;
+    -fx-border-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 1);
+}
+
+/* Style for the Text */
+.dashboard-text {
+    -fx-fill: #bdf3ff;
+    -fx-font-family: 'Gill Sans Ultra Bold Condensed';
+    -fx-font-size: 53px;
+    -fx-text-alignment: center;
+}
+
+/* Style for the Back Button */
+.back-button {
+    -fx-background-color: #b4a4ec;
+    -fx-text-fill: #2e1b5b;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 0px 0px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #2e1b5b;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 1);
+}
+
+/* Style for the Setting ImageView */
+.setting-image-view {
+    -fx-opacity: 0.9;
+}
+.setting-image-view:hover {
+    -fx-opacity: 1; /* Full opacity on hover */
+}
+
+/* Style for GridPane (Tetris Board) */
+#tetrisBoard {
+    -fx-border-color: #333; /* Dark border for the grid */
+    -fx-border-width: 2px;
+    -fx-background-color: #595757; /* Slightly lighter background for the grid cells */
+}
+
+/* Style for GridPane (Next Piece Board) */
+#nextPieceBoard {
+    -fx-border-color: #333; /* Dark border for the next piece grid */
+    -fx-border-width: 2px;
+    -fx-background-color: #444; /* Slightly lighter background for the next piece cells */
+}
+
+
+.showPaused-label {
+    -fx-text-fill: #ff4d4d; /* Red text to highlight paused state */
+}
+
+/* Style for the Score Label */
+#score {
+    -fx-text-fill: #452003;
+    -fx-font-family: "Press Start 2P", cursive; /* Retro pixel font for uniqueness */
+    -fx-font-size: 30px; /* Larger font size for prominence */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-text-alignment: center; /* Center align the text */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-color: #9a82ca; /* Border color matching the gradient */
+    -fx-border-width: 3px; /* Thickness of the border */
+    -fx-border-radius: 5px; /* Match border radius with background */
+}
+
+/* Style for the "Next Piece" Label */
+.gameBoard-label {
+    -fx-text-fill: #452003;
+    -fx-font-size: 20px; /* Slightly larger font size */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-text-alignment: center; /* Center align the text */
+    -fx-padding: 10px; /* Extra padding for a larger area */
+}
+
+/* Style for the Button without text */
+.button-no-text {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.button-no-text:hover{
+    -fx-text-fill: transparent; /* No color change on hover */
+    -fx-background-color: transparent; /* No background color change on hover */
+    -fx-border-color: transparent; /* No border color change on hover */
+    -fx-transform: none; /* No transformations on hover */
+}
+
+
+
+/* Title label styling */
+.label-section-title {
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0 0 0;
+    -fx-font-family: "Verdana"; /* Font for section titles */
+}
+
+/* Section titles */
+.instruction-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Verdana"; /* Font for section titles */
+}
+
+/* Text styling */
+.instruction-text {
+    -fx-fill: #353232;
+    -fx-font-size: 12px;
+    -fx-font-family: "Tahoma"; /* Font for the main text content */
+}
+
+/* Styling for the TableView */
+.table-view {
+    -fx-background-color: #ffffff; /* White background for table */
+    -fx-border-color: #8e44ad; /* Darker purple border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
+}
+
+
+.table-view .column-header, .table-view .column-header .label {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: transparent transparent #6a0dad transparent; /* Add a bottom border */
+    -fx-border-width: 0 0 2px 0;
+}
+
+/* Styling for the table cells */
+.table-cell {
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 14px;
+    -fx-padding: 8px; /* Consistent padding */
+    -fx-alignment: CENTER; /* Center-align text in cells */
+}
+
+/* Styling for the LeaderBoard title label */
+.leaderboard-label {
+    -fx-text-fill: #ffffff; /* White text for contrast */
+    -fx-font-family: "Elephant";
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 2); /* Subtle drop shadow */
+    -fx-text-alignment: center; /* Center-aligning the text */
+    -fx-padding: 10px; /* Adding padding around the label text */
+
+}
+/* SplitPane divider styling */
+.split-pane > .split-pane-divider {
+    -fx-background-color: #b4a4ec; /* Dark gray for the divider */
+}
+
+/* Slider styling */
+.slider {
+    -fx-padding: 10px;
+    -fx-background-color: #e0e0e0; /* Light gray background */
+    -fx-border-color: #b0b0b0; /* Slightly darker border */
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}
+
+/* Text styling for the title "Settings" */
+.setting-text {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 15px;
+    -fx-fill: #4b0082; /* Indigo color for the text */
+}
+
+/* Label styling for "Music Volume" and "Control" */
+.setting-label {
+    -fx-font-family: "Britannic Bold";
+    -fx-font-size: 30px;
+    -fx-text-fill: #4b0082; /* Indigo text color */
+}
+
+/* Enhanced ToggleButton styling */
+.toggle-button {
+    -fx-background-color: #b4a4ec; /* Light purple background color */
+    -fx-text-fill: #2e1b5b; /* Dark purple text color */
+    -fx-font-size: 15px; /* Larger font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-padding: 5px 15px; /* Padding around the text for better spacing */
+    -fx-border-radius: 10px; /* Rounded corners for the border */
+    -fx-background-radius: 10px; /* Matching rounded corners for the background */
+    -fx-border-color: #2e1b5b; /* Dark purple border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 1); /* Subtle shadow for depth */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* Hover effect */
+.toggle-button:hover {
+    -fx-background-color: #d1c7f1; /* Slightly lighter purple on hover */
+}
+
+/* Pressed effect */
+.toggle-button:pressed {
+    -fx-background-color: #9b8bdb; /* Darker purple when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1); /* Subtle change in shadow when pressed */
+}
+
+/* GridPane styling for controls */
+.setting-grid-pane {
+    -fx-padding: 10px;
+    -fx-hgap: 20px;
+    -fx-vgap: 15px;
+    -fx-background-color: #ffffff; /* White background for a clean look */
+    -fx-background-radius: 10px;
+    -fx-border-color: #b0b0b0; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+
+
+
+
+
+
+
+
+
